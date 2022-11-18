@@ -6,4 +6,10 @@ public class Conto {
 	private String ownerName;
 	private int bankBalance;
 	
+	public Conto (int bankAccount, String ownerName) {
+		this.bankAccount = bankAccount;
+		this.ownerName = ownerName;
+		this.bankBalance = 0;
+	}
+	
 }
