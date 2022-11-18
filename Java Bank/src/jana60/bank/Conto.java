@@ -40,4 +40,24 @@ public class Conto {
 		return bankBalance;
 	}
 	
+	public void addMoney(int money) {
+		bankBalance += money;
+	}
+	
+	public boolean getMoney(int money) {
+		if (bankBalance < money) {
+			return false;
+		}
+		
+		bankBalance -= money;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return ownerName
+				+ "\nBank Account: " + bankAccount
+				+ "\nBank Balance: " + bankBalance;
+	}
+	
 }
